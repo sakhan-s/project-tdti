@@ -19,12 +19,7 @@
     <header class="header">
         <div class="header__logo"><a href="/index.html"><img src="/assets/images/icons/logo.png" alt=""></a></div>
         <div class="header_row">
-            <nav class="header__menu menu">
-                <div class="menu__icon icon-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <!-- <nav class="header__menu menu">
                 <div class="menu__body">
                     <ul class="menu__list">
                         <li><a href="/index.html" class="menu__link" style="color: red;">Главная</a></li>
@@ -33,8 +28,28 @@
                         <li><a href="#" class="menu__link">Контакты</a></li>
                     </ul>
                 </div>
+            </nav> -->
+            <nav id="menu">
+                <label for="tm" id="toggle-menu">Меню<span class="drop-icon"></span></label>
+                <input type="checkbox" id="tm">
+                <ul class="main-menu clearfix">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Проекты
+                            <span class="drop-icon"></span>
+                            <label title="Toggle Drop-down" class="drop-icon" for="sm1"></label>
+                        </a>
+                        <input type="checkbox" id="sm1">
+                        <ul class="sub-menu">
+                            <li><a href="#">Наши работы</a></li>
+                            <li><a href="#">Сделать заказ</a>
+                                <input type="checkbox" id="sm2">
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
             </nav>
-
         </div>
     </header>
     <section class="main_block">
@@ -65,20 +80,12 @@
     </section>
     <section class="gallery" id="trigger-left">
         <div class="portfolio">
-            <div class="item" data-aos="fade-up">1</div>
-            <div class="item" data-aos="fade-down">2</div>
-            <div class="item" data-aos="fade-right">3</div>
-            <div class="item" data-aos="fade-left">4</div>
-
-            <div class="item" data-aos="zoom-in">5</div>
-            <div class="item" data-aos="zoom-out">6</div>
-
-            <div class="item" data-aos="slide-up">7</div>
-
-            <div class="item" data-aos="flip-up">8</div>
-            <div class="item" data-aos="flip-down">9</div>
-            <div class="item" data-aos="flip-right">10</div>
-            <div class="item" data-aos="flip-left">11</div>
+            <div class="item" data-aos="fade-down"></div>
+            <div class="item" data-aos="fade-right"></div>
+            <div class="item" data-aos="fade-left"></div>
+            <div class="item" data-aos="zoom-in"></div>
+            <div class="item" data-aos="zoom-out"></div>
+            <div class="item" data-aos="slide-up"></div>
         </div>
     </section>
 
