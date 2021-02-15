@@ -200,7 +200,8 @@ body {
 
 .main_bg {
     width: 100%;
-    min-height: 900px;
+    min-width: 1200px;
+    min-height: 820px;
     height: 100%;
     background: no-repeat url(/assets/images/images/home.jpg);
 }
@@ -213,9 +214,10 @@ body {
 }
 
 .main_block {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    display: contents;
+    left: 1em;
+    margin-right: -2em;
+    min-width: fit-content;
 }
 
 .about {
@@ -234,7 +236,7 @@ body {
     height: 50px;
     background: white;
     position: relative;
-    top: -7em;
+    top: -2em;
     z-index: 1;
 }
 
@@ -303,76 +305,102 @@ body {
 }
 
 .item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding-top: 75px;
     background: #ccc;
     text-align: center;
     color: #FFF;
     font-size: 3em;
+    margin-bottom: 30px;
+    margin-left: 60px;
 }
 
 .item--secondary {
     position: fixed;
     bottom: 15px;
+    z-index: 2;
     margin: auto;
     right: 20px;
     background: red;
 }
 
+.our-projects {
+    display: flex;
+    position: relative;
+    font-size: 5em;
+    margin-bottom: 1em;
+}
+
 .portfolio .item {
-    min-width: 200px;
-    min-height: 200px;
     width: auto;
     height: auto;
 }
 
 .portfolio .item:nth-child(1) {
     background: no-repeat center center url(/assets/images/images/first_image.jpg);
+    max-width: 373px;
+    min-width: 40%;
+    max-height: 456px;
 }
 
 .portfolio .item:nth-child(2) {
     background: no-repeat center center url(/assets/images/images/first_image.jpg);
+    max-width: 373px;
+    min-width: 40%;
+    max-height: 456px;
 }
 
 .portfolio .item:nth-child(3) {
     background: no-repeat center center url(/assets/images/images/first_image.jpg);
+
+    max-width: 369px;
+    min-width: 60%;
+    max-height: 465px;
 
 }
 
 .portfolio .item:nth-child(4) {
     background: no-repeat center center url(/assets/images/images/first_image.jpg);
 
+    max-width: 372px;
+    min-width: 20%;
+    max-height: 466px;
+
 }
 
 .portfolio .item:nth-child(5) {
     background: no-repeat center center url(/assets/images/images/first_image.jpg);
+    max-width: 369px;
+    min-width: 25%;
+    max-height: 464px;
 
 }
 
 .portfolio .item:nth-child(6) {
     background: no-repeat center center url(/assets/images/images/first_image.jpg);
+    max-width: 371px;
+    min-width: 55%;
+    min-height: 30%;
+    max-height: 255px;
 
 }
 
 .gallery {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     width: 100%;
     width: -webkit-fill-available;
     margin-bottom: 1em;
 }
 
 .portfolio {
+    position: relative;
     display: flex;
-    min-height: 800px;
-    height: 100%;
-    width: 1500px;
+    justify-content: flex-start;
+    left: 10em;
+    flex-wrap: wrap;
+    min-height: 50%;
+    min-width: 40%;
+    height: 1800px;
+    width: 800px;
     overflow: hidden;
-    padding-left: 1em;
 }
 
 footer {
@@ -383,22 +411,30 @@ footer {
     bottom: 0;
     width: 100%;
     font: 500 14px/20px "Roboto Condensed", sans-serif;
-    height: auto;
-    line-height: 60px;
+    min-height: 400px;
+    line-height: 120px;
     background: black;
     color: white;
     text-align: center;
 }
 
+.block-title {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    color: red;
+    line-height: 2em;
+}
+
 footer a {
     text-decoration: none;
     color: inherit;
-    font: 500 14px/20px "Roboto Condensed", sans-serif;
+    font: 500 34px/20px "Roboto Condensed", sans-serif;
 
 }
 
 footer a:hover {
-    border-bottom: 1px transparent;
+    border-bottom: 1px red;
 }
 
 @media only screen and (max-device-width: 1245px) {
