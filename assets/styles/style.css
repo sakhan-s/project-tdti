@@ -119,7 +119,7 @@ body {
     width: 100%;
     min-height: 900px;
     height: 100%;
-    background: no-repeat center/110% url(/src/images/bg/home.jpg);
+    background: no-repeat center/110% url(/assets/images/images/home.jpg);
 }
 
 .main_container {
@@ -166,7 +166,7 @@ body {
 
 .expirience {
     position: relative;
-    background: url(/src/images/bg/expirience.jpg) no-repeat;
+    background: url(/assets/images/images/expirience.jpg) no-repeat;
     background-size: cover;
     display: flex;
     width: 500px;
@@ -194,7 +194,7 @@ body {
     font-weight: 600;
     left: -5em;
     line-height: .6em;
-    background: url(/src/images/bg/expirience.jpg) no-repeat;
+    background: url(/assets/images/images/expirience.jpg) no-repeat;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -214,7 +214,7 @@ body {
     top: -.1em;
     left: 20%;
     font-family: "Roboto Condensed", sans-serif;
-    background: url(/src/images/bg/expirience.jpg) no-repeat;
+    background: url(/assets/images/images/expirience.jpg) no-repeat;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
