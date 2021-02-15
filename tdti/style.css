@@ -1,0 +1,309 @@
+body.loading {
+    overflow: hidden
+}
+
+#preloader {
+    position: fixed;
+    overflow-y: hidden !important;
+    -webkit-scrollbar: none;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(/src/images/icons/deafault.gif) center no-repeat #fff;
+}
+
+.preloader-down {
+    position: sticky;
+    position: -webkit-sticky;
+    height: 70px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 999;
+    bottom: 0px;
+}
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.header {
+    height: 95px;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.header_row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 2.4em;
+    left: 2em;
+}
+
+.header__logo {
+    position: relative;
+    display: flex;
+    top: 10px;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__logo a {
+    width: 5em;
+    height: 5em;
+}
+
+.menu_block {
+    position: relative;
+    display: flex;
+    height: 105px;
+    margin-bottom: 5em;
+}
+
+.menu__list {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list li a {
+    text-decoration: none;
+    margin-right: 5em;
+    color: black;
+    font: 200 16px/20px "Roboto Condensed", sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+}
+
+.menu__list li a:hover {
+    color: red;
+}
+
+.main-text {
+    position: relative;
+    top: 2em;
+    left: .8em;
+    height: auto;
+    width: 50%;
+    font-size: 6em;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+
+.main_bg {
+    width: 100%;
+    min-height: 900px;
+    height: 100%;
+    background: no-repeat center/110% url(/src/images/bg/home.jpg);
+}
+
+.main_container {
+    position: relative;
+    display: flex;
+    top: 0;
+}
+
+.main_block,
+.main_bg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 5em;
+    font: 500 28px/20px "Roboto Condensed", sans-serif;
+    height: auto;
+    width: 72%;
+    min-height: 644px;
+    margin-bottom: 5em;
+    z-index: -1;
+}
+
+.white-block {
+    width: 100%;
+    height: 150px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.text-about {
+    position: relative;
+    line-height: 1.3em;
+    left: 2em;
+    width: 24%;
+    height: 100%;
+}
+
+.expirience {
+    position: relative;
+    background: url(/src/images/bg/expirience.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 500px;
+    height: 405px;
+}
+
+.expirience-white {
+    position: relative;
+    display: flex;
+    background: rgb(255, 255, 255);
+    top: 5.5%;
+    left: 5.5%;
+    height: 363px;
+    width: 453px;
+}
+
+.expirience-text {
+    position: relative;
+    display: flex;
+    color: black;
+    height: 70px;
+    font-size: 2em;
+    top: 5em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    left: -5em;
+    line-height: .6em;
+    background: url(/src/images/bg/expirience.jpg) no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.expirience-year {
+    width: 500px;
+}
+
+#fullyear {
+    position: relative;
+    display: flex;
+    color: black;
+    height: 1em;
+    font-size: 10em;
+    line-height: 1.2em;
+    top: -.1em;
+    left: 20%;
+    font-family: "Roboto Condensed", sans-serif;
+    background: url(/src/images/bg/expirience.jpg) no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
+
+.item--secondary {
+    position: fixed;
+    bottom: 15px;
+    margin: auto;
+    right: 20px;
+    background: red;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.gallery img {
+    margin-bottom: 1em;
+}
+
+.gallery img:nth-child(2n+1) {
+    position: relative;
+    left: 20em;
+}
+
+.gallery img:nth-child(2n) {
+    position: relative;
+    right: 20em;
+}
+
+footer {
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    font: 500 14px/20px "Roboto Condensed", sans-serif;
+    height: auto;
+    line-height: 60px;
+    font-size: 14px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    font: 500 14px/20px "Roboto Condensed", sans-serif;
+
+}
+
+footer a:hover {
+    border-bottom: 1px transparent;
+}
+
+@media only screen and (max-device-width: 1245px) {
+    .main-text {
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-device-width: 1020px) {
+    .main-text {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-device-width: 1020px) {
+    .main-text {
+        font-size: 3.4em;
+    }
+}

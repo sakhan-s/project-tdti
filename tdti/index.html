@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/aos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <title>Унитарное предприятие «ТДТИпроект»</title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="preloader-up"></div>
+    <header class="header">
+        <div class="header__logo"><a href="/index.html"><img src="/src/images/logo.png" alt=""></a></div>
+        <div class="header_row">
+            <nav class="header__menu menu">
+                <div class="menu__icon icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li><a href="/index.html" class="menu__link" style="color: red;">Главная</a></li>
+                        <li><a href="#" class="menu__link">Портфолио</a></li>
+                        <li><a href="#" class="menu__link">О нас</a></li>
+                        <li><a href="#" class="menu__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <section class="main_block">
+        <div class="main_container">
+            <div class="main_bg">
+                <div class="main-text">Команда профессиональных архитекторов и конструкторов</div>
+            </div>
+        </div>
+    </section>
+    <div class="white-block"></div>
+    <section class="about">
+
+        <div class="expirience" data-aos="slide-down">
+            <div class="expirience-white">
+                <div class="expirience-year">
+                    <div id="fullyear"></div>
+                </div>
+            </div>
+            <div class="expirience-text">лет опыта</div>
+        </div>
+        </div>
+        <div class="text-about">Унитарное предприятие «ТДТИпроект» было создано в 2008 году и зарегистрировано 26 августа 2008 году за № 191056492, согласно Свидетельству о государственной регистрации, выданному исполкомом Первомайского района г. Минска.
+        </div>
+        <div class="progress"></div>
+        <div class="item item--secondary" data-aos="fade-right" data-aos-anchor="#trigger-left">
+            UP
+        </div>
+    </section>
+    <section class="gallery" id="trigger-left">
+        <div class="portfolio">
+            <div class="item" data-aos="fade-up">1</div>
+            <div class="item" data-aos="fade-down">2</div>
+            <div class="item" data-aos="fade-right">3</div>
+            <div class="item" data-aos="fade-left">4</div>
+
+            <div class="item" data-aos="zoom-in">5</div>
+            <div class="item" data-aos="zoom-out">6</div>
+
+            <div class="item" data-aos="slide-up">7</div>
+
+            <div class="item" data-aos="flip-up">8</div>
+            <div class="item" data-aos="flip-down">9</div>
+            <div class="item" data-aos="flip-right">10</div>
+            <div class="item" data-aos="flip-left">11</div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="foot">
+
+        <div class="block-title">
+            <span>
+                Контактная информация
+            </span>
+            <a href="tel:+375 17 3013742" class="foot-cont">
+                <img src="/src/images/icons/phone.png" alt="tel">
+                <span>
+                    +375 17 3013742
+                </span>
+            </a>
+            <a href="https://goo.gl/maps/DJAujSuVYe9NMgZ58" target="_blank" class="foot-address">
+                <img src="/src/images/icons/location.png" alt="location">
+                <span>
+                    г.Минск пер.Тучинский, 2а-811
+                </span>
+            </a>
+        </div>
+
+    </footer>
+    <script>
+        let thisDate = new Date();
+        let thisYear = thisDate.getFullYear();
+        let diffYear = thisYear - 2008;
+        document.getElementById("fullyear").innerHTML = diffYear;
+    </script>
+    <script src="/aos.js"></script>
+    <script src="/script.js"></script>
+
+    <div class="preloader-down"></div>
+</body>
+
+</html>
