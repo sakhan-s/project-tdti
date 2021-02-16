@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="stylesheet" href="/assets/styles/aos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800&display=swap" rel="stylesheet">
     <title>Унитарное предприятие «ТДТИпроект»</title>
 </head>
@@ -17,30 +20,15 @@
     <div id="preloader"></div>
     <div class="preloader-up"></div>
     <header class="header">
-        <div class="header__logo"><a href="/index.html"><img src="/assets/images/icons/logo.png" alt=""></a></div>
-        <div class="header_row">
-            <nav id="menu">
-                <label for="tm" id="toggle-menu">Меню<span class="drop-icon"></span></label>
-                <input type="checkbox" id="tm">
-                <ul class="main-menu clearfix">
-                    <li><a href="#" class="active_page">Главная</a></li>
-                    <li><a href="#">Проекты
-                            <span class="drop-icon"></span>
-                            <label title="Toggle Drop-down" class="drop-icon" for="sm1"></label>
-                        </a>
-                        <input type="checkbox" id="sm1">
-                        <ul class="sub-menu">
-                            <li><a href="#">Наши работы</a></li>
-                            <li><a href="#">Сделать заказ</a>
-                                <input type="checkbox" id="sm2">
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="" class="logo"></a>
+        <input class="menu-btn" type="chckbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
     </header>
     <section class="main_block">
         <div class="main_container">
@@ -78,39 +66,57 @@
             <div class="item" data-aos="zoom-out"></div>
             <div class="item" data-aos="slide-up"></div>
         </div>
-        <div class="all-project"><button>Все проекты</button></div>
+        <div class="all-project" data-aos="fade-up"><button>Все проекты</button></div>
     </section>
 
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="column">
+            <ul>
+                <li class="title">«ТДТИпроект»</li>
+                <li>УП «ТДТИпроект» аттестовано на выполнение функций генерального проектировщика (Аттестат соответствия №0000242-ГП первой категории), на разработку разделов проектной документации для объектов строительства первого-четвёртого классов сложности (Аттестат соответствия №0000421-ПР первой категории), на разработку предпроектной (предынвестиционной) документации (Аттестат соответствия №0000284-ПП первой категории).
 
-
-
-    <footer class="foot">
-
-        <div class="block-title">
-            <span>
-                Контактная информация
-            </span>
-            <a href="tel:+375 17 3013742" class="foot-cont">
-                <img src="" alt="tel">
-                <span>
-                    +375 17 3013742
-                </span>
-            </a>
-            <a href="https://goo.gl/maps/DJAujSuVYe9NMgZ58" target="_blank" class="foot-address">
-                <img src="" alt="location">
-                <span>
-                    г.Минск пер.Тучинский, 2а-811
-                </span>
-            </a>
+                </li>
+            </ul>
         </div>
 
+        <div class="column">
+            <ul>
+                <li class="title">ВАЖНОЕ</li>
+                <li><a href="#">Свяжитесь с нами</a></li>
+                <li><a href="#">Наши услуги</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li class="title">Рассылка новостей</li>
+                <li>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Электронная почта*" maxlength="80" required /><button class="btn1"><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/nvJ8L7G8Q1MVgG539" title="Address,State,Country,Pincode"><i class="fa fa-map-marker"></i></a>
+                    <a href="tel:+375 17 3013742"><i class="fa fa-phone"></i></a>
+                    <a href="#"><i class="fa fa-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
     </footer>
+
+
+
     <script>
+        // код ниже высчитывает разницу между годами начала работы и текущим годом и вписывает в #fullyear
+        // таким образом, в блоке всегда актуальная информация об опыте
         let thisDate = new Date();
         let thisYear = thisDate.getFullYear();
         let diffYear = thisYear - 2008;
         document.getElementById("fullyear").innerHTML = diffYear;
+        // конец кода
     </script>
     <script src="/assets/scripts/aos.js"></script>
     <script src="/assets/scripts/script.js"></script>
