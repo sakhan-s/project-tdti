@@ -30,6 +30,7 @@ html,
 body {
     box-sizing: border-box;
     margin: 0;
+    width: fit-content;
     padding: 0;
 }
 
@@ -211,14 +212,15 @@ body {
     display: flex;
     top: 0;
     width: 100%;
+    max-width: 1900px;
 }
 
-.main_block {
+/* .main_block {
     display: contents;
     left: 1em;
     margin-right: -2em;
     min-width: fit-content;
-}
+} */
 
 .about {
     position: relative;
@@ -564,5 +566,30 @@ footer a:hover {
 
     #menu li:hover>input[type="checkbox"]+.sub-menu {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-text {
+        font-size: 50px;
+        left: 1px;
+    }
+
+    .our-projects {
+        left: 15%;
+        font-size: 2em;
+    }
+
+    .portfolio {
+        left: -5px;
+    }
+
+    .main_bg {
+        min-width: 400px;
+        max-width: 450px;
+    }
+
+    .main_container {
+        width: 85%;
     }
 }
