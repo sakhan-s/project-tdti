@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="stylesheet" href="/assets/styles/aos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,16 +18,26 @@
 <body>
     <div id="preloader"></div>
     <div class="preloader-up"></div>
-    <header class="header">
-        <a href="" class="logo"></a>
-        <input class="menu-btn" type="chckbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="/index.html">Главная</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <img class="nav__logo-img" src="/assets/images/icons/logo.png" alt="logo">
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__item-link" href="#">Главная</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__item-link" href="#">О нас</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__item-link" href="#">Проекты</a>
+                </li>
+            </ul>
+            <button class="nav__btn" type="btn">
+                <span></span>
+            </button>
+        </nav>
     </header>
     <section class="main_block">
         <div class="main_container">
