@@ -15,8 +15,8 @@ body.loading {
 }
 
 .preloader-down {
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     height: 70px;
     width: 100%;
     background: rgb(255, 255, 255);
@@ -80,6 +80,7 @@ header {
 
 .active.nav__list {
     right: 0;
+    display: flex;
 }
 
 .nav__list-item {
@@ -90,6 +91,7 @@ header {
     text-decoration: none;
     color: black font-size: 24px;
     text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
     padding: 20px;
     transition: 0.2s;
 }
@@ -153,32 +155,6 @@ header {
     display: none;
 }
 
-@media(max-width: 768px) {
-    .nav__btn {
-        display: block;
-    }
-
-    .nav__list {
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 105%;
-        right: 100%;
-        width: 100%;
-        min-height: 300px;
-        background: cadetblue;
-    }
-
-    .nav__item-link {
-        display: block;
-        text-align: center;
-    }
-
-    .nav__list-item {
-        width: 100%;
-    }
-}
 
 .main-text {
     position: relative;
@@ -212,12 +188,12 @@ header {
     max-width: 1900px;
 }
 
-/* .main_block {
-    display: contents;
+.main_block {
+    display: flex;
     left: 1em;
     margin-right: -2em;
     min-width: fit-content;
-} */
+}
 
 .about {
     position: relative;
@@ -335,6 +311,7 @@ header {
 .portfolio .item {
     width: auto;
     height: auto;
+    cursor: pointer;
 }
 
 .portfolio .item:nth-child(1) {
@@ -342,6 +319,31 @@ header {
     max-width: 373px;
     min-width: 40%;
     max-height: 456px;
+}
+
+.portfolio .item:nth-child(1):hover {
+    opacity: .2;
+}
+
+.portfolio .item:nth-child(2):hover {
+    opacity: .2;
+}
+
+.portfolio .item:nth-child(3):hover {
+    opacity: .2;
+}
+
+.portfolio .item:nth-child(4):hover {
+    opacity: .2;
+}
+
+.portfolio .item:nth-child(5):hover {
+    opacity: .2;
+}
+
+.portfolio .item:nth-child(6):hover {
+    opacity: .2;
+    transition: 1s;
 }
 
 .portfolio .item:nth-child(2) {
@@ -388,8 +390,8 @@ header {
 
 .gallery {
     position: relative;
-    width: 100%;
     width: -webkit-fill-available;
+    width: 100%;
     margin-bottom: 1em;
     background: #f2f4f9;
 }
@@ -425,6 +427,7 @@ header {
     padding-left: 42px;
     background: #f2f4f9;
     padding-right: 42px;
+    border: 1px solid whitesmoke;
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
 }
@@ -432,11 +435,10 @@ header {
 .all-project button:hover {
     background: red;
     color: white;
+    border-radius: 5%;
     cursor: pointer;
     font-size: 2.1em;
 }
-
-.all-project button:active {}
 
 .footer {
     background: #000;
@@ -541,6 +543,35 @@ header {
     .footer .column ul li .btn1 {
         position: relative;
         top: 2px;
+    }
+}
+
+@media(max-width: 768px) {
+    .nav__btn {
+        display: block;
+    }
+
+    .nav__list {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        display: none;
+        z-index: 1;
+        top: 55%;
+        right: 100%;
+        width: 100%;
+        min-height: 300px;
+        background: cadetblue;
+    }
+
+    .nav__item-link {
+        display: block;
+        text-align: center;
+    }
+
+    .nav__list-item {
+        width: 100%;
     }
 }
 
