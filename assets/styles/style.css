@@ -35,7 +35,6 @@ body {
 
 body {
     margin: 0;
-    background-color: #f4f4f4;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -56,8 +55,7 @@ header {
     display: flex;
     width: 100%;
     z-index: 999;
-    top: 0;
-    height: 95px;
+    top: -2px height: 95px;
     background: white;
     justify-content: space-around;
 }
@@ -187,7 +185,7 @@ header {
 
 .main_bg {
     width: 100%;
-    min-width: 1200px;
+    min-width: 1500px;
     min-height: 820px;
     height: 100%;
     background: no-repeat url(/assets/images/images/home.jpg);
@@ -198,20 +196,17 @@ header {
     display: flex;
     top: 0;
     width: 100%;
-    max-width: 1900px;
 }
 
 .main_block {
     display: flex;
-    left: 1em;
-    margin-right: -2em;
-    min-width: fit-content;
+    min-width: auto;
 }
 
 .about {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     font: 500 28px/20px "Roboto Condensed", sans-serif;
     height: auto;
     width: 72%;
