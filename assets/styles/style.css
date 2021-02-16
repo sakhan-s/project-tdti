@@ -55,7 +55,8 @@ header {
     position: relative;
     display: flex;
     width: 100%;
-    justify-content: center;
+    height: 95px;
+    justify-content: flex-start;
 }
 
 .nav {
@@ -70,6 +71,13 @@ header {
     width: 50%;
 }
 
+.nav__logo {
+    display: flex;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -79,8 +87,9 @@ header {
 }
 
 .active.nav__list {
-    right: 0;
+    right: 100px;
     display: flex;
+    position: relative;
 }
 
 .nav__list-item {
@@ -107,6 +116,7 @@ header {
     height: 30px;
     background-color: transparent;
     border: none;
+    left: 100px;
     right: 2%;
     cursor: pointer;
     outline: none;
@@ -314,18 +324,15 @@ header {
     cursor: pointer;
 }
 
-.portfolio .item:nth-child(1) {
-    background: no-repeat center/200% url(/assets/images/images/first_image.jpg);
-    max-width: 373px;
-    min-width: 40%;
-    max-height: 456px;
-}
-
 .portfolio .item:nth-child(1):hover {
+    min-width: 45%;
+    transition: 1s;
     opacity: .2;
 }
 
 .portfolio .item:nth-child(2):hover {
+    min-width: 45%;
+    transition: 1.5s;
     opacity: .2;
 }
 
@@ -344,6 +351,13 @@ header {
 .portfolio .item:nth-child(6):hover {
     opacity: .2;
     transition: 1s;
+}
+
+.portfolio .item:nth-child(1) {
+    background: no-repeat center/200% url(/assets/images/images/first_image.jpg);
+    max-width: 373px;
+    min-width: 40%;
+    max-height: 456px;
 }
 
 .portfolio .item:nth-child(2) {
@@ -557,12 +571,12 @@ header {
         flex-direction: column;
         position: absolute;
         display: none;
-        z-index: 1;
-        top: 55%;
+        z-index: 900;
+        top: 105%;
         right: 100%;
         width: 100%;
         min-height: 300px;
-        background: cadetblue;
+        background: white;
     }
 
     .nav__item-link {
