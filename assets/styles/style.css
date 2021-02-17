@@ -170,8 +170,10 @@ header {
 
 
 .main-text {
-    position: relative;
-    top: 2em;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(2, 200px);
     left: .8em;
     height: auto;
     width: 50%;
@@ -196,8 +198,6 @@ header {
     top: 0;
     width: 100%;
 }
-
-.main_block {}
 
 .about {
     position: relative;
