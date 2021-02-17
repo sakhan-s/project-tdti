@@ -181,9 +181,6 @@ header {
     color: white;
 }
 
-.main_block {
-    position: relative;
-}
 
 .main_bg {
     width: 100%;
@@ -195,15 +192,12 @@ header {
 
 .main_container {
     position: relative;
-    display: flex;
+    display: grid;
     top: 0;
     width: 100%;
 }
 
-.main_block {
-    display: flex;
-    min-width: auto;
-}
+.main_block {}
 
 .about {
     position: relative;
@@ -646,7 +640,7 @@ header {
 }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+/* @media only screen and (min-width : 320px) and (max-width : 480px) {
     header {
         min-width: 320px;
         max-width: 28%;
@@ -686,7 +680,7 @@ header {
     .nav__logo {
         display: none;
     }
-}
+} */
 
 /* Smartphones (горизонтальная) ----------- */
 @media only screen and (min-width: 321px) {
