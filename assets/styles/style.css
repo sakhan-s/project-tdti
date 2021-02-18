@@ -13249,6 +13249,7 @@ button.swiper-pagination-bullet {
     left: auto;
     top: auto;
     right: auto;
+    background: #007aff;
     display: inline-block;
     pointer-events: auto;
 }
