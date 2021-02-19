@@ -30,7 +30,7 @@
             owl: $(".owl-carousel"),
             swiper: $(".swiper-slider"),
             search: $(".rd-search"),
-            searchResults: $('.rd-search-results'),
+            //searchResults: $('.rd-search-results'),
             isotope: $(".isotope"),
             popover: $('[data-toggle="popover"]'),
             viewAnimate: $('.view-animate'),
@@ -1343,13 +1343,6 @@
                         transitionStart: function() {
                             toggleSwiperInnerVideos(this);
                         },
-                        // TODO code review
-                        /*transitionEnd: function () {
-                        	var $buttonsWinona = $(this.slides[this.activeIndex]).find('.button-winona');
-                        	if ($buttonsWinona.length && !isNoviBuilder) {
-                        		initWinonaButtons($buttonsWinona);
-                        	}
-                        }*/
                     }
                 };
 

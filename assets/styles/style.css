@@ -4135,9 +4135,9 @@ html .button.button-primary-lighten:active {
 }
 
 .button-lg {
-    padding: 14px 35px;
+    padding: 15px 35px;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 @media (min-width: 576px) {
