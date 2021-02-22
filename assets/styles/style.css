@@ -3076,10 +3076,10 @@ svg.expiriens #base {
     width: 200px;
     max-width: 100%;
     position: absolute;
-    left: 60%;
+    left: 58%;
     bottom: 26%;
     transform: translateX(-50%);
-    font-size: 16px;
+    font-size: 25px;
     line-height: 1.2em;
     font-weight: 400;
     color: #151515;
@@ -3088,9 +3088,10 @@ svg.expiriens #base {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 555px) {
     .box-subtitle {
-        padding-left: 22px;
+        padding-right: 36px;
+        padding-left: 24px;
     }
 }
 
