@@ -13424,21 +13424,24 @@ button.swiper-pagination-bullet {
     }
 }
 
-.google-map-markers {
+.yandex-map-markers {
     display: none;
 }
 
-.google-map-container {
+.yandex-map-container {
     width: 100%;
 }
 
-.google-map {
-    height: 300px;
+.yandex-map {
+    display: -webkit-inline-box;
+    max-width: calc(95% - 100px);
+    margin: 5% 5% 0 5%;
+    height: 600px;
     width: 100%;
 }
 
 @media (min-width: 1200px) {
-    .google-map {
+    .yandex-map {
         height: 769px;
     }
 }
