@@ -4143,8 +4143,8 @@ html .button.button-primary-lighten:active {
 @media (min-width: 576px) {
     .button-lg {
         font-size: 14px;
-        padding-left: 42px;
-        padding-right: 42px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
