@@ -13434,8 +13434,7 @@ button.swiper-pagination-bullet {
 
 .yandex-map {
     display: -webkit-inline-box;
-    max-width: calc(95% - 100px);
-    margin: 5% 5% 0 5%;
+    max-width: 120%;
     height: 600px;
     width: 100%;
 }
