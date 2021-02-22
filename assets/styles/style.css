@@ -12978,19 +12978,18 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-bullet,
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-mark {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-bullet {
     display: inline-block;
-    background: transparent;
     font-weight: 400;
     color: #29293a;
     text-align: center;
     transition: .33s;
-    line-height: 32px;
+    line-height: 50px;
     margin: 0 10px;
 }
 
