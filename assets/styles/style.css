@@ -3692,7 +3692,7 @@ img {
     display: inline-block;
     font-weight: 400;
     font-style: normal;
-    speak: none;
+    /* speak: none; */
     text-transform: none;
 }
 
@@ -7198,7 +7198,7 @@ html:not(.tablet):not(.mobile) .thumbnail-indigo:hover .thumbnail-indigo-caption
 
 .snackbars-right {
     display: inline-block;
-    float: right;
+    /* float: right; */
     text-transform: uppercase;
 }
 
@@ -12623,6 +12623,7 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
     border-radius: 10px;
     position: relative;
+    touch-action: none;
     -ms-touch-action: none;
     background: rgba(0, 0, 0, 0.1);
 }
@@ -12833,6 +12834,7 @@ button.swiper-pagination-bullet {
 .swiper-container-coverflow .swiper-wrapper {
     /* Windows 8 IE 10 fix */
     -ms-perspective: 1200px;
+    perspective: 1200px;
 }
 
 .swiper-button-prev,
@@ -15471,6 +15473,7 @@ yx-axis
 
 .owl-carousel .owl-stage {
     position: relative;
+    touch-action: pan-Y;
     -ms-touch-action: pan-Y;
 }
 
@@ -15487,6 +15490,7 @@ yx-axis
     position: relative;
     overflow: hidden;
     /* fix for flashing background */
+    transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
 }
 
@@ -15793,7 +15797,7 @@ button.owl-dot::-moz-focus-inner {
 
 .lg-icon {
     font-family: lg;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -16852,7 +16856,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-icon {
     font-family: lg;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
