@@ -1924,33 +1924,6 @@
             }
         }
 
-        // Custom Video Overlay
-        if (plugins.videoOverlay.length) {
-            for (var i = 0; i < plugins.videoOverlay.length; i++) {
-                var overlay = $(plugins.videoOverlay[i]);
-
-                if (overlay) {
-                    overlay.css({
-                        'opacity': '1'
-                    });
-                    overlay.on('click', function() {
-                        $(this).animate({
-                                opacity: 0
-                            },
-                            function() {
-                                this.style.display = 'none';
-                            }
-                        );
-                    });
-                }
-            }
-        }
-
-        // Google maps
-        if (plugins.maps.length) {
-            lazyInit(plugins.maps, initMaps);
-        }
-
 
         // Hoverdir plugin
         if (plugins.hoverdir.length) {
