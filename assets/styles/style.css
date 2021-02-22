@@ -12973,13 +12973,13 @@ button.swiper-pagination-bullet {
     width: auto;
     right: auto;
     left: auto;
-    margin-left: -10px;
+    top: 27px;
 }
 
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-bullet,
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-mark {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
 }
 
@@ -12989,7 +12989,7 @@ button.swiper-pagination-bullet {
     color: #29293a;
     text-align: center;
     transition: .33s;
-    line-height: 50px;
+    line-height: 25px;
     margin: 0 10px;
 }
 
@@ -13008,7 +13008,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-bullet-active {
-    color: #fff;
+    color: red;
 }
 
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-bullet-active:nth-child(1)~.swiper-pagination-mark {
@@ -17244,50 +17244,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     height: 100% !important;
 }
 
-.lg-outer .lg-video .lg-video-play {
-    width: 84px;
-    height: 59px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -42px;
-    margin-top: -30px;
-    z-index: 1180;
-    cursor: pointer;
-}
 
 .lg-outer .lg-has-iframe .lg-video {
     -webkit-overflow-scrolling: touch;
     overflow: auto;
-}
-
-.lg-outer .lg-has-vimeo .lg-video-play {
-    background: url(../images/vimeo-play.png) no-repeat;
-}
-
-.lg-outer .lg-has-vimeo:hover .lg-video-play {
-    background: url(../images/vimeo-play.png) 0 -58px no-repeat;
-}
-
-.lg-outer .lg-has-html5 .lg-video-play {
-    background: url(../images/video-play.png) no-repeat;
-    height: 64px;
-    margin-left: -32px;
-    margin-top: -32px;
-    width: 64px;
-    opacity: .8;
-}
-
-.lg-outer .lg-has-html5:hover .lg-video-play {
-    opacity: 1;
-}
-
-.lg-outer .lg-has-youtube .lg-video-play {
-    background: url(../images/youtube-play.png) no-repeat;
-}
-
-.lg-outer .lg-has-youtube:hover .lg-video-play {
-    background: url(../images/youtube-play.png) 0 -60px no-repeat;
 }
 
 .lg-outer .lg-video-object {
@@ -17300,11 +17260,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-has-video .lg-video-object {
     visibility: hidden;
-}
-
-.lg-outer .lg-has-video.lg-video-playing .lg-object,
-.lg-outer .lg-has-video.lg-video-playing .lg-video-play {
-    display: none;
 }
 
 .lg-outer .lg-has-video.lg-video-playing .lg-video-object {
