@@ -3088,9 +3088,9 @@ svg.expiriens #base {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .box-subtitle {
-        left: 62%;
+        padding-left: 22px;
     }
 }
 
@@ -12990,7 +12990,7 @@ button.swiper-pagination-bullet {
     text-align: center;
     transition: .33s;
     line-height: 25px;
-    margin: 0 10px;
+    margin: 5px 10px;
 }
 
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-mark {
