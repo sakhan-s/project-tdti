@@ -12999,7 +12999,6 @@ button.swiper-pagination-bullet {
     z-index: -1;
     left: -10px;
     display: block;
-    background: #af8855;
     transition: .4s ease-in-out;
 }
 
