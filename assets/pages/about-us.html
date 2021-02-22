@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7CRoboto+Condensed:300,400,700%7CRoboto:300,400,500,700,900">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="/assets/styles/bootstrap.css">
-    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
-    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="/assets/styles/fonts.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
     <style>
@@ -36,186 +34,217 @@
 </head>
 
 <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-        <div class="preloader-logo"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" />
-        </div>
-        <div class="preloader-body">
-            <div id="loadingProgressG">
-                <div class="loadingProgressG" id="loadingProgressG_1"></div>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter41706724 = new Ya.Metrika({
+                        id: 41706724,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script><!-- /Yandex.Metrika counter -->
+    < <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="/assets/images/icons/logo.png" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+        <div class="preloader">
+            <div class="preloader-logo"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" />
+            </div>
+            <div class="preloader-body">
+                <div id="loadingProgressG">
+                    <div class="loadingProgressG" id="loadingProgressG_1"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="page">
-        <!-- Page Header-->
-        <header class="section page-header">
-            <!-- RD Navbar-->
-            <div class="rd-navbar-wrap">
-                <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-                    <div class="rd-navbar-main-outer">
-                        <div class="rd-navbar-main">
-                            <!-- RD Navbar Panel-->
-                            <div class="rd-navbar-panel">
-                                <!-- RD Navbar Toggle-->
-                                <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                                <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
+        <div class="page">
+            <!-- Page Header-->
+            <header class="section page-header">
+                <!-- RD Navbar-->
+                <div class="rd-navbar-wrap">
+                    <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                        <div class="rd-navbar-main-outer">
+                            <div class="rd-navbar-main">
+                                <!-- RD Navbar Panel-->
+                                <div class="rd-navbar-panel">
+                                    <!-- RD Navbar Toggle-->
+                                    <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                                    <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
+                                </div>
+                                <div class="rd-navbar-main-element">
+                                    <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                                        <!-- RD Navbar Nav-->
+                                        <ul class="rd-navbar-nav">
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
+                                            </li>
+                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="/assets/pages/about-us.html">О нас</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/projects.html">Проекты</a>
+                                                <!-- RD Navbar Dropdown-->
+                                                <ul class="rd-menu rd-navbar-dropdown">
+                                                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/assets/pages/projects.html">Наше портфолио</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/contacts.html">Контакты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="rd-navbar-main-element">
-                                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
-                                    <!-- RD Navbar Nav-->
-                                    <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
-                                        </li>
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="/assets/pages/about-us.html">О нас</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/projects.html">Проекты</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/assets/pages/projects.html">Наше портфолио</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/contacts.html">Контакты</a>
-                                        </li>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- Breadcrumbs -->
+            <section class="breadcrumbs-custom bg-image context-dark bg-overlay" style="background-image: url(/assets/images/images/pojects/project6/image2.jpg);">
+                <div class="breadcrumbs-custom-inner">
+                    <div class="container breadcrumbs-custom-container">
+                        <div class="breadcrumbs-custom-main">
+                            <h6 class="breadcrumbs-custom-subtitle title-decorated">О компании</h6>
+                            <h1 class="breadcrumbs-custom-title">Унитарное предприятие «ТДТИпроект»</h1>
+                        </div>
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="index.html">Главная</a></li>
+                            <li class="active"><a href="/assets/pages/about-us.html">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Overview-->
+            <section class="section section-lg">
+                <div class="container">
+                    <div class="row row-50 justify-content-center justify-content-lg-between">
+                        <div class="col-md-10 col-lg-6">
+                            <h3 class="wow-outer"><span class="wow slideInDown">Немного о нас</span></h3>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">Унитарное предприятие «ТДТИпроект» было создано в 2008 году и зарегистрировано 26 августа 2008 году за № 191056492, согласно Свидетельству о государственной регистрации, выданному исполкомом Первомайского района г. Минска.</span></p>
+                            <p class="font-roboto wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">
+
+                                    Предприятие выполняет комплекс услуг по проектированию общественных зданий и сооружений, жилых домов, торгово-развлекательных и спортивных комплексов, интерьеров жилых и общественных зданий, реконструкции, застройки территории. Профессионализм наших сотрудников позволяет разрабатывать проектную документацию высокого качества и в кратчайшие сроки.
+
+                                    На предприятии в штате работают 28 специалистов различных специальностей, имеющих квалификацию, достаточную для выполнения проектных работ различных уровней сложности. По каждому из разделов имеется специалист, получивший квалификационный аттестат, выданный Министерством архитектуры и строительства Республики Беларусь.
+
+                                    УП «ТДТИпроект» аттестовано на выполнение функций генерального проектировщика (Аттестат соответствия №0000242-ГП первой категории), на разработку разделов проектной документации для объектов строительства первого-четвёртого классов сложности (Аттестат соответствия №0000421-ПР первой категории), на разработку предпроектной (предынвестиционной) документации (Аттестат соответствия №0000284-ПП первой категории).
+
+                                    На предприятии с 2010 года внедрена и действует система менеджмента качества в соответствии с требованиями СТБ ISO 9001-2009. Сертификат Системы менеджмента качества СТБ ISO 9001-2009 регистрационный № BY /112 05.01.092 03809 от 08.12.2014 года.</span></p>
+
+                        </div>
+                        <div class="col-md-10 col-lg-6 col-xl-5"><img class="img-responsive" src="/assets/images/images/architects.jpg" alt="" width="470" height="334" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Our Clients-->
+            <section class="section section-lg">
+                <div class="container">
+                    <div class="row row-50 justify-content-center justify-content-lg-between">
+                        <div class="col-md-10 col-lg-6 col-xl-5"><img class="img-responsive" src="/assets/images/images/clients.jpg" alt="" width="470" height="334" />
+                        </div>
+                        <div class="col-md-10 col-lg-6">
+
+                            <h3 class="wow-outer"><span class="wow slideInDown">Среди наших клиентов</span></h3>
+
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ООО «Трайпл»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ООО «ЗаславльСтройИнвест»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> РУП «Национальный аэропорт Минск»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ГП «Управление капитального строительства Советского района г. Минска»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> Свято-Елисаветинский женский монастырь в г. Минске Минской епархии Белорусской Православной Церкви</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> «Тепломонтаж» ОАО «Спецремонт»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> СООО «Дайнова»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ГП «Управление образования, спорта и туризма Администрации Фрунзенского р-на г. Минска»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> КУП «Управление капитального строительства Центрального района г. Минска»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> УП «Дом профсоюзов»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ИООО «Вармани»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> СООО «ЭкоБел «Колбовичи»</span></p>
+                            <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ООО «Бизнес ФМ»</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-lg bg-gray-lighten" id="our-history">
+                <div class="container">
+                    <!-- Timeline Classic-->
+                    <article class="timeline-classic">
+                        <div class="timeline-classic-item">
+                            <div class="timeline-classic-item-aside"><img class="timeline-classic-item-image" src="/assets/images/images/pojects/project1/image1.jpg" alt="" width="390" height="250" />
+                            </div>
+                            <div class="timeline-classic-item-divider"></div>
+                            <div class="timeline-classic-item-main">
+                                <time class="black-timeline wow-outer slideInDown text-uppercase" datetime="2020"><span class="font-condensed wow" data-caption-animate="slideInDown" data-wow-delay=".5	s"></span></time>
+                                <p class="timeline-classic-item-title">Аэровокзальный комплекс (вариант №1)</p>
+                                <p>Концепция развития аэровокзального комплекса на территории Национального аэропорта "Минск"</p>
+                            </div>
+                        </div>
+                        <div class="timeline-classic-item">
+                            <div class="timeline-classic-item-aside"><img class="timeline-classic-item-image" src="/assets/images/images/pojects/project17/image5.jpg" alt="" width="390" height="250" />
+                            </div>
+                            <div class="timeline-classic-item-divider"></div>
+                            <div class="timeline-classic-item-main">
+                                <time class="black-timeline wow-outer slideInDown text-uppercase" datetime="2020"><span class="font-condensed wow" data-caption-animate="slideInDown" data-wow-delay=".5	s"></span></time>
+                                <p class="timeline-classic-item-title">Жилой квартал с гостиницей и реабилитационным центром по ул. Волынская</p>
+                                <p>г.Москва, Россия</p>
+                            </div>
+
+                        </div>
+                        <div class="group group-middle"><a class="button button-primary button-winona" href="/assets/pages/projects.html" data-waypoint-to="#our-history">Все проекты</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Page Footer-->
+            <footer class="section footer-standard bg-darken">
+                <div class="footer-standard-main">
+                    <div class="container">
+                        <div class="row row-50">
+                            <div class="col-lg-4">
+                                <div class="inset-right-1">
+                                    <h5 class="font-condensed text-uppercase text-white font-weight-bold">О нас</h5>
+                                    <p>Унитарное предприятие «ТДТИпроект» было создано в 2008 году и зарегистрировано 26 августа 2008 году за № 191056492, согласно Свидетельству о государственной регистрации, выданному исполкомом Первомайского района г. Минска.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-5 col-lg-4">
+                                <div class="box-1">
+                                    <h5 class="font-condensed text-uppercase text-white font-weight-bold">Контактная информация</h5>
+                                    <ul class="list-sm">
+                                        <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-white"></span><a class="link-default" href="https://clck.ru/TNoGB" target="_blank">г.Минск<br>пер. Тучинский, 2а-811</a></li>
+                                        <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-white"></span><a class="link-default" href="tel:+375173013742">+375173013742</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
-        <!-- Breadcrumbs -->
-        <section class="breadcrumbs-custom bg-image context-dark bg-overlay" style="background-image: url(/assets/images/images/pojects/project6/image2.jpg);">
-            <div class="breadcrumbs-custom-inner">
-                <div class="container breadcrumbs-custom-container">
-                    <div class="breadcrumbs-custom-main">
-                        <h6 class="breadcrumbs-custom-subtitle title-decorated">О компании</h6>
-                        <h1 class="breadcrumbs-custom-title">Унитарное предприятие «ТДТИпроект»</h1>
-                    </div>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Главная</a></li>
-                        <li class="active"><a href="/assets/pages/about-us.html">О нас</a>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-        </section>
-        <!-- Overview-->
-        <section class="section section-lg">
-            <div class="container">
-                <div class="row row-50 justify-content-center justify-content-lg-between">
-                    <div class="col-md-10 col-lg-6">
-                        <h3 class="wow-outer"><span class="wow slideInDown">Немного о нас</span></h3>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">Унитарное предприятие «ТДТИпроект» было создано в 2008 году и зарегистрировано 26 августа 2008 году за № 191056492, согласно Свидетельству о государственной регистрации, выданному исполкомом Первомайского района г. Минска.</span></p>
-                        <p class="font-roboto wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">
-
-                                Предприятие выполняет комплекс услуг по проектированию общественных зданий и сооружений, жилых домов, торгово-развлекательных и спортивных комплексов, интерьеров жилых и общественных зданий, реконструкции, застройки территории. Профессионализм наших сотрудников позволяет разрабатывать проектную документацию высокого качества и в кратчайшие сроки.
-
-                                На предприятии в штате работают 28 специалистов различных специальностей, имеющих квалификацию, достаточную для выполнения проектных работ различных уровней сложности. По каждому из разделов имеется специалист, получивший квалификационный аттестат, выданный Министерством архитектуры и строительства Республики Беларусь.
-
-                                УП «ТДТИпроект» аттестовано на выполнение функций генерального проектировщика (Аттестат соответствия №0000242-ГП первой категории), на разработку разделов проектной документации для объектов строительства первого-четвёртого классов сложности (Аттестат соответствия №0000421-ПР первой категории), на разработку предпроектной (предынвестиционной) документации (Аттестат соответствия №0000284-ПП первой категории).
-
-                                На предприятии с 2010 года внедрена и действует система менеджмента качества в соответствии с требованиями СТБ ISO 9001-2009. Сертификат Системы менеджмента качества СТБ ISO 9001-2009 регистрационный № BY /112 05.01.092 03809 от 08.12.2014 года.</span></p>
-
-                    </div>
-                    <div class="col-md-10 col-lg-6 col-xl-5"><img class="img-responsive" src="/assets/images/images/architects.jpg" alt="" width="470" height="334" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Our Clients-->
-        <section class="section section-lg">
-            <div class="container">
-                <div class="row row-50 justify-content-center justify-content-lg-between">
-                    <div class="col-md-10 col-lg-6">
-                        <h3 class="wow-outer"><span class="wow slideInDown">Среди наших клиентов</span></h3>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ООО «Трайпл»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ООО «ЗаславльСтройИнвест»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> РУП «Национальный аэропорт Минск»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ГП «Управление капитального строительства Советского района г. Минска»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> Свято-Елисаветинский женский монастырь в г. Минске Минской епархии Белорусской Православной Церкви</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> «Тепломонтаж» ОАО «Спецремонт»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> СООО «Дайнова»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ГП «Управление образования, спорта и туризма Администрации Фрунзенского р-на г. Минска»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> КУП «Управление капитального строительства Центрального района г. Минска»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> УП «Дом профсоюзов»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ИООО «Вармани»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> СООО «ЭкоБел «Колбовичи»</span></p>
-                        <p class="heading-subtitle wow-outer"><span class="wow slideInDown" data-wow-delay=".05s"> ООО «Бизнес ФМ»</span></p>
-                    </div>
-                    <div class="col-md-10 col-lg-6 col-xl-5"><img class="img-responsive" src="/assets/images/images/clients.jpg" alt="" width="470" height="334" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-lg bg-gray-lighten" id="our-history">
-            <div class="container">
-                <!-- Timeline Classic-->
-                <article class="timeline-classic">
-                    <div class="timeline-classic-item">
-                        <div class="timeline-classic-item-aside"><img class="timeline-classic-item-image" src="/assets/images/images/pojects/project1/image1.jpg" alt="" width="390" height="250" />
-                        </div>
-                        <div class="timeline-classic-item-divider"></div>
-                        <div class="timeline-classic-item-main">
-                            <time class="black-timeline wow-outer slideInDown text-uppercase" datetime="2020"><span class="font-condensed wow" data-caption-animate="slideInDown" data-wow-delay=".5	s"></span></time>
-                            <p class="timeline-classic-item-title">Аэровокзальный комплекс (вариант №1)</p>
-                            <p>Концепция развития аэровокзального комплекса на территории Национального аэропорта "Минск"</p>
-                        </div>
-                    </div>
-                    <div class="timeline-classic-item">
-                        <div class="timeline-classic-item-aside"><img class="timeline-classic-item-image" src="/assets/images/images/pojects/project17/image5.jpg" alt="" width="390" height="250" />
-                        </div>
-                        <div class="timeline-classic-item-divider"></div>
-                        <div class="timeline-classic-item-main">
-                            <time class="black-timeline wow-outer slideInDown text-uppercase" datetime="2020"><span class="font-condensed wow" data-caption-animate="slideInDown" data-wow-delay=".5	s"></span></time>
-                            <p class="timeline-classic-item-title">Жилой квартал с гостиницей и реабилитационным центром по ул. Волынская</p>
-                            <p>г.Москва, Россия</p>
-                        </div>
-
-                    </div>
-                    <div class="group group-middle"><a class="button button-primary button-winona" href="/assets/pages/projects.html" data-waypoint-to="#our-history">Все проекты</a></div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Page Footer-->
-        <footer class="section footer-standard bg-darken">
-            <div class="footer-standard-main">
                 <div class="container">
-                    <div class="row row-50">
-                        <div class="col-lg-4">
-                            <div class="inset-right-1">
-                                <h5 class="font-condensed text-uppercase text-white font-weight-bold">О нас</h5>
-                                <p>Унитарное предприятие «ТДТИпроект» было создано в 2008 году и зарегистрировано 26 августа 2008 году за № 191056492, согласно Свидетельству о государственной регистрации, выданному исполкомом Первомайского района г. Минска.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4">
-                            <div class="box-1">
-                                <h5 class="font-condensed text-uppercase text-white font-weight-bold">Контактная информация</h5>
-                                <ul class="list-sm">
-                                    <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-white"></span><a class="link-default" href="https://clck.ru/TNoGB" target="_blank">г.Минск<br>пер. Тучинский, 2а-811</a></li>
-                                    <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-white"></span><a class="link-default" href="tel:+375173013742">+375173013742</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="footer-standard-aside"><a class="brand" href="/assets/pages/projects.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
+                        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Все права защищены</span><span>&nbsp;</span>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="footer-standard-aside"><a class="brand" href="/assets/pages/projects.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
-                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Все права защищены</span><span>&nbsp;</span>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-    <script src="https://use.fontawesome.com/4a0d406ee9.js"></script>
-    <script src="/assets/scripts/core.min.js"></script>
-    <script src="/assets/scripts/script.js"></script>
+            </footer>
+        </div>
+        <!-- Global Mailform Output-->
+        <div class="snackbars" id="form-output-global"></div>
+        <!-- Javascript-->
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+        <script src="https://use.fontawesome.com/4a0d406ee9.js"></script>
+        <script src="/assets/scripts/core.min.js"></script>
+        <script src="/assets/scripts/script.js"></script>
 </body>
 
 </html>

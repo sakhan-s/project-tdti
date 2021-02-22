@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
+    Set-Cookie: promo_shown=1; Max-Age=2600000; Secure
     <link rel="icon" href="/assets/images/icons/logo.png" type="image/x-icon">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7CRoboto+Condensed:300,400,700%7CRoboto:300,400,500,700,900">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="/assets/styles/bootstrap.css">
-    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
-    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="/assets/styles/fonts.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
     <style>
@@ -36,139 +35,168 @@
 </head>
 
 <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-        <div class="preloader-logo"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" />
-        </div>
-        <div class="preloader-body">
-            <div id="loadingProgressG">
-                <div class="loadingProgressG" id="loadingProgressG_1"></div>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter41706724 = new Ya.Metrika({
+                        id: 41706724,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script><!-- /Yandex.Metrika counter -->
+    < <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="/assets/images/icons/logo.png" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+        <div class="preloader">
+            <div class="preloader-logo"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" />
+            </div>
+            <div class="preloader-body">
+                <div id="loadingProgressG">
+                    <div class="loadingProgressG" id="loadingProgressG_1"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="page">
-        <!-- Page Header-->
-        <header class="section page-header">
-            <!-- RD Navbar-->
-            <div class="rd-navbar-wrap">
-                <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-                    <div class="rd-navbar-main-outer">
-                        <div class="rd-navbar-main">
-                            <!-- RD Navbar Panel-->
-                            <div class="rd-navbar-panel">
-                                <!-- RD Navbar Toggle-->
-                                <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                                <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
-                            </div>
-                            <div class="rd-navbar-main-element">
-                                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
-                                    <!-- RD Navbar Nav-->
-                                    <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/about-us.html">О нас</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/projects.html">Проекты</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/assets/pages/projects.html">Наше портфолио</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="/assets/pages/contacts.html">Контакты</a>
-                                        </li>
-                                    </ul>
+        <div class="page">
+            <!-- Page Header-->
+            <header class="section page-header">
+                <!-- RD Navbar-->
+                <div class="rd-navbar-wrap">
+                    <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                        <div class="rd-navbar-main-outer">
+                            <div class="rd-navbar-main">
+                                <!-- RD Navbar Panel-->
+                                <div class="rd-navbar-panel">
+                                    <!-- RD Navbar Toggle-->
+                                    <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                                    <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
+                                </div>
+                                <div class="rd-navbar-main-element">
+                                    <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                                        <!-- RD Navbar Nav-->
+                                        <ul class="rd-navbar-nav">
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/about-us.html">О нас</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/assets/pages/projects.html">Проекты</a>
+                                                <!-- RD Navbar Dropdown-->
+                                                <ul class="rd-menu rd-navbar-dropdown">
+                                                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/assets/pages/projects.html">Наше портфолио</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="/assets/pages/contacts.html">Контакты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- Breadcrumbs -->
-        <section class="breadcrumbs-custom bg-image context-dark bg-overlay" style="background-image: url(/assets/images/images/pojects/project6/image2.jpg);">
-            <div class="breadcrumbs-custom-inner">
-                <div class="container breadcrumbs-custom-container">
-                    <div class="breadcrumbs-custom-main">
-                        <h6 class="breadcrumbs-custom-subtitle title-decorated">Контакты</h6>
-                        <h1 class="breadcrumbs-custom-title">Контакты</h1>
-                    </div>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Главная</a></li>
-                        <li class="active">Контакты</li>
-                    </ul>
+                    </nav>
                 </div>
-            </div>
-        </section>
-        <section class="section section-sm">
-            <div class="container">
-                <div class="layout-bordered">
-                    <div class="layout-bordered-item wow-outer">
-                        <div class="layout-bordered-item-inner wow slideInUp">
-                            <div class="icon icon-lg mdi mdi-phone text-primary"></div>
-                            <ul class="list-0">
-                                <li><a class="link-default" href="tel:+375173013748">+375 17 3013748</a></li>
-                                <li><a class="link-default" href="tel:+375173013742">+375 17 3013742</a></li>
-                            </ul>
+            </header>
+            <!-- Breadcrumbs -->
+            <section class="breadcrumbs-custom bg-image context-dark bg-overlay" style="background-image: url(/assets/images/images/pojects/project9/image2.jpg);">
+                <div class="breadcrumbs-custom-inner">
+                    <div class="container breadcrumbs-custom-container">
+                        <div class="breadcrumbs-custom-main">
+                            <h6 class="breadcrumbs-custom-subtitle title-decorated">Контакты</h6>
+                            <h1 class="breadcrumbs-custom-title">Контакты</h1>
                         </div>
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="index.html">Главная</a></li>
+                            <li class="active"><a href="/assets/pages/contacts.html">Контакты</a></li>
+                        </ul>
                     </div>
-                    <div class="layout-bordered-item wow-outer">
+                </div>
+            </section>
+            <section class="section section-sm">
+                <div class="container">
+                    <div class="layout-bordered">
+                        <div class="layout-bordered-item wow-outer">
+                            <div class="layout-bordered-item-inner wow slideInUp">
+                                <div class="icon icon-lg mdi mdi-phone text-primary"></div>
+                                <ul class="list-0">
+                                    <li><a class="link-default" href="tel:+375173013748">+375 17 3013748</a></li>
+                                    <li><a class="link-default" href="tel:+375173013742">+375 17 3013742</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="layout-bordered-item wow-outer">
 
-                    </div>
-                    <div class="layout-bordered-item wow-outer">
-                        <div class="layout-bordered-item-inner wow slideInUp">
-                            <div class="icon icon-lg mdi mdi-map-marker text-primary"></div><a class="link-default" href="https://clck.ru/TNoGB">220004, г. Минск пер. Тучинский, 2а-811</a>
+                        </div>
+                        <div class="layout-bordered-item wow-outer">
+                            <div class="layout-bordered-item-inner wow slideInUp">
+                                <div class="icon icon-lg mdi mdi-map-marker text-primary"></div><a class="link-default" href="https://clck.ru/TNoGB">220004, г. Минск пер. Тучинский, 2а-811</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="section bg-gray-100">
+                <div class="wow fadeIn">
+                    <section class="section wow fadeIn">
+                        <div class="yandex-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac1f0f4b3a9f41341e463b916979d1f18db7dca82739e648c61c526256373b89&amp;source=constructor" width="100%" height="700" frameborder="0"></iframe></div>
+                </div>
+            </section>
+        </div>
+        </div>
         </section>
-        <section class="section bg-gray-100">
-            <div class="wow fadeIn">
-                <section class="section wow fadeIn">
-                    <div class="yandex-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac1f0f4b3a9f41341e463b916979d1f18db7dca82739e648c61c526256373b89&amp;source=constructor" width="100%" height="700" frameborder="0"></iframe></div>
-            </div>
-        </section>
-    </div>
-    </div>
-    </section>
-    <!-- Page Footer-->
-    <footer class="section footer-standard bg-darken">
-        <div class="footer-standard-main">
-            <div class="container">
-                <div class="row row-50">
-                    <div class="col-lg-4">
-                        <div class="inset-right-1">
-                            <h5 class="font-condensed text-uppercase text-white font-weight-bold">О нас</h5>
-                            <p>Унитарное предприятие «ТДТИпроект» было создано в 2008 году и зарегистрировано 26 августа 2008 году за № 191056492, согласно Свидетельству о государственной регистрации, выданному исполкомом Первомайского района г. Минска.</p>
+        <!-- Page Footer-->
+        <footer class="section footer-standard bg-darken">
+            <div class="footer-standard-main">
+                <div class="container">
+                    <div class="row row-50">
+                        <div class="col-lg-4">
+                            <div class="inset-right-1">
+                                <h5 class="font-condensed text-uppercase text-white font-weight-bold">О нас</h5>
+                                <p>Унитарное предприятие «ТДТИпроект» было создано в 2008 году и зарегистрировано 26 августа 2008 году за № 191056492, согласно Свидетельству о государственной регистрации, выданному исполкомом Первомайского района г. Минска.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-5 col-lg-4">
-                        <div class="box-1">
-                            <h5 class="font-condensed text-uppercase text-white font-weight-bold">Контактная информация</h5>
-                            <ul class="list-sm">
-                                <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-white"></span><a class="link-default" href="https://clck.ru/TNoGB" target="_blank">г.Минск<br>пер. Тучинский, 2а-811</a></li>
-                                <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-white"></span><a class="link-default" href="tel:+375173013742">+375173013742</a></li>
+                        <div class="col-sm-6 col-md-5 col-lg-4">
+                            <div class="box-1">
+                                <h5 class="font-condensed text-uppercase text-white font-weight-bold">Контактная информация</h5>
+                                <ul class="list-sm">
+                                    <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-white"></span><a class="link-default" href="https://clck.ru/TNoGB" target="_blank">г.Минск<br>пер. Тучинский, 2а-811</a></li>
+                                    <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-white"></span><a class="link-default" href="tel:+375173013742">+375173013742</a></li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="footer-standard-aside"><a class="brand" href="index.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
-                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Все права защищены</span><span>&nbsp;</span>
+            <div class="container">
+                <div class="footer-standard-aside"><a class="brand" href="index.html"><img src="/assets/images/icons/logo.png" alt="" width="109" height="27" srcset="/assets/images/icons/logo.png 2x" /></a>
+                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Все права защищены</span><span>&nbsp;</span>
+                </div>
             </div>
+        </footer>
         </div>
-    </footer>
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-    <script src="https://use.fontawesome.com/4a0d406ee9.js"></script>
-    <script src="/assets/scripts/core.min.js"></script>
-    <script src="/assets/scripts/script.js"></script>
+        <!-- Global Mailform Output-->
+        <div class="snackbars" id="form-output-global"></div>
+        <!-- Javascript-->
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+        <script src="https://use.fontawesome.com/4a0d406ee9.js"></script>
+        <script src="/assets/scripts/core.min.js"></script>
+        <script src="/assets/scripts/script.js"></script>
 </body>
 
 </html>
