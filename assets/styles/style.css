@@ -13429,12 +13429,12 @@ button.swiper-pagination-bullet {
 }
 
 .yandex-map-container {
-    width: 100%;
+    width: 100vw;
 }
 
 .yandex-map {
     display: -webkit-inline-box;
-    max-width: 120%;
+    max-width: 100vw;
     height: 600px;
     width: 100%;
 }
