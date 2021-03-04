@@ -6539,7 +6539,7 @@ html:not(.tablet):not(.mobile) .profile-classic-caption {
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 130%;
         transform: none;
         object-fit: cover;
         object-position: center center;
