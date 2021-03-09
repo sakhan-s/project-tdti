@@ -1,2 +1,2 @@
 # project-tdti
-Website for tdti.by
+Website for http://tdti.by
